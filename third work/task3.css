@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+header {
+    background-color: #8b65e4;
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+     padding: 15px 0;
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.headerLogo {
+   display: flex;
+    justify-content: center;
+     align-items: center;
+}
+.headerTitle {
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.headerIcon {
+    background-image: url("headerLogo.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.headerMenu a{
+    margin: 5px;
+    color: #fff;
+     text-decoration: none;
+}
+
+.content {
+     text-align: center;
+     padding-bottom: 50px;
+}
+.neiroTitle {
+    font-size: 25px;
+    font-weight: bold;
+   
+}
+.neiroPost {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+  line-height: 1.5;  
+}
+
+.button {
+    background-color: rgb(161, 20, 86);
+    color: #ffffff;
+    margin: 20px 0 20px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+ 
+}
+.button:hover {
+    background-color: #fff;
+    color: #32347c;
+    margin: 20px 0 20px 0;
+    padding: 10px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.violetBl {
+    background-color: #552eb1;
+    color: #fff;
+    padding: 50px;
+}
+.whatNeiroString {
+    display: flex;
+    justify-content: center; padding: 20px;
+}
+.whatNeiroBl {
+    width: 25%;
+    margin: 10px;
+     border-radius: 15px;
+     background-color: #f0f5fc;
+     padding: 30px;
+    border-left: 5px solid #3a7fda;
+}
+.whatNeiroBl_title {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+} 
+.whatNeiroBl_iconone {
+     background-image: url("headerLogo.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.whatNeiroBl_icontwo {
+     background-image: url("dartboard.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.whatNeiroBl_icontree {
+     background-image: url("lightning.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.whereNeiroBl_eye {
+    background-image: url("headerIconeye.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.whereNeiroBl_bulb {
+    background-image: url("headerIconbulb.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+}
+.whereNeiroBl_graph {
+    background-image: url("headerIcongraph.png");
+    width:30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.whereNeiroString {
+    display: flex;
+    justify-content: center; margin-top: 20px;
+}
+
+.whereNeiroBl {
+  background-color: #a27cd4;
+  border-radius: 10px;
+  width: 25%;
+  margin: 15px;
+  padding: 30px;
+}
+.whereNeiroBl_logo {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+.whereNeiroBl_title {
+    color: #dfc44f;
+   font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+.whereNeiroBl_post {
+    color: #fff;
+}
+
+.whatWorkBl {
+      border-radius: 15px;
+     background-color: #f0f5fc;
+     margin: 35px auto;
+     width: 500px;
+     padding: 20px;
+     display: flex;
+}
+.whatWorkBlIcon_one {
+    background-image: url("number1.png");
+    width:80px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+.whatWorkBlIcon_two {
+    background-image: url("number2.png");
+    width:87px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+.whatWorkBlIcon_tree {
+    background-image: url("number3.png");
+    width:80px;
+    height: 57px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.whatWorkBlIcon_four {
+    background-image: url("number4.png");
+    width:80px;
+    height: 51px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+.whatWorkBlPost, h3{
+    text-align: left;
+    margin-bottom: 5px;
+}
+footer {
+    text-align: center;
+}
