@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: #e6e6e6c5;
+}
+
+
+header {
+    background: linear-gradient(to right, #da3659, #ffc599);
+    transition: background 0.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.headerMenu {
+    display: flex;      
+    flex-wrap: wrap;   
+    gap: 20px;
+}
+
+.headerMenu a {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 70px 0 50px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mainTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cookBlStr {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;height: 20%;
+}
+
+.cookBl {
+   width: 35%;      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 1px 3px 2px #dad8d8;
+    margin-right: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.cookBl:last-child {
+    margin-right: 0;
+}
+
+.cookBlImg_one {
+    background-image: url("salad.jpg");
+    background-size: cover;
+    background-position: center; 
+    height: 300px;
+    flex-shrink: 0;  
+    object-fit: cover;
+    display: block;
+}
+.cookBlImg_two {
+    background-image: url("salatik.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+.cookBlImg_tree {
+    background-image: url("desert.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.cookPost {
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+.cookPost h3 {
+    color: #da3659;
+    padding-bottom: 15px;
+}
+
+
+.whatUsBl {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px #dad8d8;
+    margin-right: 20px;
+    padding: 20px 10px;
+}
+
+.whatUsBl:last-child {
+    margin-right: 0;
+}
+
+.whatUsIcon_one {
+    background-image: url("avocado.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.whatUsIcon_two {
+    background-image: url("clock.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.whatUsIcon_tree {
+    background-image: url("heart.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.whatUsPost {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.philoCook {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 0;
+    border-radius: 20px;
+    box-shadow: 1px 3px 2px #dad8d8;
+    margin-bottom: 40px;
+}
+
+.philoPost {
+    width: 50%;
+    text-align: left;
+}
+
+.philoPost h3 {
+    color: #da3659;
+    padding-bottom: 20px;
+}
+
+.philoPost p {
+    padding-bottom: 20px;
+}
+
+.philoImg {
+    background-image: url("chief.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px #dad8d8;
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #535158;
+    padding: 30px;
+}
+
+.footerPost {
+    color: #fff;
+    width: 500px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+
+@media (min-width: 110px) and (max-width:  930px){
+
+ .content {
+    margin: 0 5px 0 5px;
+ }
+ .cookBl:last-child {
+    margin-right: 25px;
+}
+.whatUsBl:last-child {
+    margin-right: 25px;
+}
+.footerPost {
+    width: auto;
+}
+    .philoImg {
+    height: 200px;
+  }
+  .philoCook {
+    display: block;
+    margin: 0 20px 20px 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  .philoPost {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+     .cookBlStr {
+    display: block;
+    margin: 20px;
+  }
+  .cookBl {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .whatUsBl {
+     margin: 20px ;
+  }
+  
+}
+
+@media (max-width: 680px) {
+    .content {
+   padding: 130px 0 50px 0;
+ }
+  
+}
+@media (max-width: 1015px) {
+    .content {
+    margin: 0 20px 0 20px;
+    
+ }
+  
+}
+
+@media (min-width: 537px) {
+      .philoCook {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-right: 20px;
+  }
+  .philoPost {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+}
+@media (max-width: 680px) {
+ 
+  .headerMenu { 
+    flex-direction: column; 
+    align-items: center;
+        gap: 10px;
+        width: 90%;
+}
+
+  .headerMenu a{
+        text-align: center;
+         width: 100%;
+         margin: 0;
+         font-size: 18px;
+  }
+  
+}
+
