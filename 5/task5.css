@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    background-color: #e6e6e6c5;
+     max-width: 1000px;
+}
+
+
+.header {
+    background: linear-gradient(to right, #da3659, #ffc599);
+    transition: background 0.5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerMenu {
+    display: none;
+}
+
+.header-item {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header_burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.header_bar {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background: #333;
+    transition: 0.3s;
+}
+
+.content {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 70px 50p;
+    margin: 0 auto;
+}
+
+.mainTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.philoCook {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 3px 2px #dad8d8;
+    margin: 130px 20px;
+}
+
+.philoPost {
+    width: 30%;
+    text-align: left;
+}
+
+
+.philoPost p {
+    padding-bottom: 20px;
+}
+
+
+@media (min-width: 110px) and (max-width: 930px) {
+
+    .content {
+        margin: 0 5px 0 5px;
+    }
+
+    .philoCook {
+        display: block;
+        padding: 20px;
+    }
+
+    .philoPost {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    .content {
+        padding: 130px 0 50px 0;
+    }
+
+}
+
+@media (min-width: 680px) and (max-width: 930px) {
+    .content {
+        padding: 80px 0 50px 0;
+    }
+
+}
+
+@media (max-width: 1015px) {
+    .content {
+        margin: 0 20px 0 20px;
+
+    }
+}
+
+
+
+@media (min-width: 680px) {
+    .philoCook {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .philoPost {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 40px;
+    }
+  
+}
+
+
+@media (min-width: 155px) {
+  .headerMenu {
+    position: fixed;
+    left: -100%;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #da3659, #ffc599);
+    transition: background 0.5s ease;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0,0,0,0.1);
+  }
+
+  .headerMenu.active {
+    left: 0;
+  }
+
+  .header-item {
+    margin: 10px 0;
+  }
+
+  .header-link {
+    color: #1b0202;
+  }
+
+  .header_burger {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .header_burger.active .header_bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header_burger.active .header_bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header_burger.active .header_bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
