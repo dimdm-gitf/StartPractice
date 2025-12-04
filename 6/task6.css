@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin-top: 20px;
+    background-color: #e6e6e6c5;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 30px;
+}
+.slider {
+    position: relative;  
+    width: 50%;
+    height: 500px;      
+    background-color: #963b3b;
+    border-radius: 15px;
+}
+
+
+.img_one, .img_two, .img_tree {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;        
+    display: none;
+    border-radius: 15px;
+    
+}
+
+.img_one {
+    background-image: url('bird-one.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.img_two {
+    background-image: url('bird-two.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.img_tree {
+    background-image: url('bird-tree.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+
+.btn {
+    position: relative;
+    background: transparent;
+    height: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('right.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; 
+    border-radius: 20px;
+}
