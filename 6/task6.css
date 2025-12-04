@@ -22,7 +22,6 @@ body {
     position: relative;  
     width: 50%;
     height: 500px;      
-    background-color: #963b3b;
     border-radius: 15px;
 }
 
@@ -85,3 +84,4 @@ body {
     opacity: 0.8; 
     border-radius: 20px;
 }
+
